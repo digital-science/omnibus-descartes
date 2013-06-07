@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Perform necessary descartes setup steps
+# after package is installed.
+#
+
+PROGNAME=$(basename $0)
+
+function error_exit
+{
+  echo "${PROGNAME}: ${1:-"Unknown Error"}" 1>&2
+  exit 1
+}
+
+ln -sf /opt/descartes/bin/descartes-ctl /usr/bin || error_exit "Cannot link descartes-ctl in /usr/bin"
+
+echo "Thank you for installing descartes!"
+
+exit 0

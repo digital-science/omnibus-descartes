@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Perform necessary descartes removal steps
+# after package is uninstalled.
+#
+
+echo "descartes has been uninstalled!"
+
+rm -f /usr/bin/descartes-ctl
+
+exit 0
