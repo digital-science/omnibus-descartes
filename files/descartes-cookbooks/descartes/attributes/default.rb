@@ -23,7 +23,7 @@ default['descartes']['redis']['run_dir'] = "/var/opt/descartes/run"
 # THESE ARE FOR REDIS 2.4!!!
 default['descartes']['redis']['config']['daemonize'] = "no"
 default['descartes']['redis']['config']['pidfile'] = "#{node['descartes']['redis']['run_dir']}/redis.pid"
-default['descartes']['redis']['config']['port'] = 12000 # crazy redis port, in case you're runnig another redis
+default['descartes']['redis']['config']['port'] = 7601 # crazy redis port, in case you're runnig another redis
 default['descartes']['redis']['config']['timeout'] = 0
 default['descartes']['redis']['config']['loglevel'] = "verbose"
 default['descartes']['redis']['config']['logfile'] = "#{node['descartes']['redis']['log_dir']}/redis.log"
@@ -109,7 +109,7 @@ default['descartes']['base_dir'] = "/var/opt/descartes/redis"
 default['descartes']['env_dir'] = "/var/opt/descartes/descartes/env"
 default['descartes']['log_dir'] = "/var/log/descartes/descartes"
 
-default['descartes']['port'] = 5043
+default['descartes']['port'] = 7600
 
 # Descartes runit env settings
 # everything must be a string as it's used as file content
