@@ -14,6 +14,11 @@ $ bundle install --binstubs
 
 ## Usage
 
+## Pre-build
+
+You'll want to setup some secrets. See the [installing](INSTALL.md) file
+for details.
+
 ### Build
 
 You create a platform-specific package using the `build project` command:
