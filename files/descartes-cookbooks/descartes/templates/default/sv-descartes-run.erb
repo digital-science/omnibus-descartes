@@ -1,0 +1,7 @@
+#!/bin/sh
+
+exec 2>&1
+envdir=<%= @options[:env_dir] %>
+export PATH="/opt/descartes/embedded/bin:/opt/descartes/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+cd "/opt/descartes/embedded/service/descartes"
+exec chpst -u <%= @options[:user] %> -e $envdir bundle exec rackup -p <%= @options[:port] %> -s thin

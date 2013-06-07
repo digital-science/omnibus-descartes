@@ -1,0 +1,4 @@
+#!/bin/sh
+exec 2>&1
+exec chpst -P -U <%= node['descartes']['postgresql']['username'] %> -u <%= node['descartes']['postgresql']['username'] %> /opt/descartes/embedded/bin/postgres -D <%= File.join(node['descartes']['postgresql']['dir'], "data") %>
+

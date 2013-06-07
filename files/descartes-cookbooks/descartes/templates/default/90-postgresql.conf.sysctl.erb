@@ -1,0 +1,5 @@
+#
+# chef server postgresql kernel shm tweaks
+#
+kernel.shmmax = <%= node['descartes']['postgresql']['shmmax'] %>
+kernel.shmall = <%= node['descartes']['postgresql']['shmall'] %>
