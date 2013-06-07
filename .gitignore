@@ -7,3 +7,4 @@ bin/*
 files/**/cache/
 vendor/cookbooks
 secrets.rb
+Berksfile.lock
